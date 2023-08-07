@@ -10,7 +10,6 @@
 
     </head>
     <body>
-        <div class="sticky top-0" id="navigationlayout"></div>
         <div id="mainlayout"></div>
         
     </body>

@@ -10,18 +10,19 @@ const Navigationlayout = () => {
       const activeOption = () => alert('hi');
     
     return (
-        <nav className="my-5 pl-6 flex items-center bg-white h-7">
-            <div className='flex'>
+        <nav className="flex items-center bg-white h-20 border-b border-gray-100">
+            <div className='flex pl-6'>
                 <div className='pr-32 text-xl font-black'><a href="#">joy_</a></div>
-                <div className='px-4'><a href="#">코드</a></div>
-                <div className='px-4'><a href="#">코드</a></div>
-                <div className='px-4'><a href="#">코드</a></div>
-                <div className='px-4'><a href="#">코드</a></div>
+                <div className='px-4 text-xl md:text-sm hidden sm:inline lg:inline'><a href="#">코드</a></div>
+                <div className='px-4 text-xl md:text-sm hidden sm:inline lg:inline'><a href="#">코드</a></div>
+                <div className='px-4 text-xl md:text-sm hidden sm:inline lg:inline'><a href="#">코드</a></div>
+                <div className='px-4 text-xl md:text-sm hidden sm:inline lg:inline'><a href="#">코드</a></div>
+                <div className='px-4 text-xl md:text-sm hidden sm:inline lg:inline'><a href="#">코드</a></div>
             </div>
              {/* if문 사용하기 auth */}
              <div className='flex-auto flex justify-end items-center pr-8'>
-                <div className="mr-4 pr-2"><a href="#">로그인</a></div>
-                <div className="mr-4 pr-6"><a href="#">회원가입</a></div>
+             <div className="mr-4 pr-2 text-xl md:text-sm hidden md:inline sm:hidden lg:inline"><a href="login">로그인</a></div>
+             <div className="mr-4 pr-6 text-xl md:text-sm hidden md:inline sm:hidden lg:inline"><a href="#">회원가입</a></div>
                 <button onClick={activeOption}>{MenuSVG}</button>
             </div>
         </nav>
